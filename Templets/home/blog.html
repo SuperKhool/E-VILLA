@@ -1,0 +1,81 @@
+{%extends 'home/base.html'%}
+{%load static%}
+{%block body%}
+
+  
+    <!-- blog section -->
+  
+    <section class="blog_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            Latest Blog
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mx-auto">
+            <div class="box">
+              <div class="img-box">
+                <img src=" {% static 'images/ai.jpg' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  WHAT IS AI ?
+                </h5>
+                <p>
+                  
+Artificial Intelligence (AI) is a 
+rapidly growing field that has the 
+potential to revolutionize many industries
+ and aspects of our lives.............
+                </p>
+                <a href="{%url 'b1'%}">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mx-auto">
+            <div class="box">
+              <div class="img-box">
+                <img src=" {% static 'images/django.png' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  DJANGO THE BEST FRAMEWORK !!!
+                </h5>
+                <p>
+                  Django is a free and open-source web framework written in Python
+                  . It is designed for rapid development and clean, pragmatic design.
+                  Django provides an easy-to-use interface for building web applications, ...... .
+                </p>
+                <a href="{%url 'b2'%}">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mx-auto">
+            <div class="box">
+              <div class="img-box">
+                <img src=" {% static 'images/py.webp' %}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  ALL ABOUT PYTHON !!!
+                </h5>
+                <p>
+                  Python is a high-level, interpreted programming language that is widely used for various purposes such as web development, scientific computing, data analysis, artificial intelligence, and more..........
+                </p>
+                <a href="{%url 'b3'%}">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- end blog section -->
+{%endblock%}
